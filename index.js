@@ -10,7 +10,8 @@ if (typeof window === 'undefined') {
     const mc = new mudclient(mcContainer);
 
     window.mcOptions = mc.options;
-
+    window.mudclient = mudclient
+    
     Object.assign(mc.options, {
         middleClickCamera: true,
         mouseWheel: true,
